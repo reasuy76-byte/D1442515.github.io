@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔮 神秘命運占卜站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔮 神秘命運占卜</h1>
+            <p>閉上眼睛，誠心想著你的問題，然後開啟啟示...</p>
+        </header>
 
+        <main>
+            <div id="setup-area">
+                <div class="crystal-ball" id="ball">✨</div>
+                <button id="draw-btn" class="primary-btn">開啟今日運勢</button>
+            </div>
+
+            <div id="result-area" class="hidden">
+                <div class="result-card">
+                    <h2 id="res-title">運勢類型</h2>
+                    <hr>
+                    <div class="res-content">
+                        <p><strong>分析：</strong> <span id="res-desc">說明文字</span></p>
+                    </div>
+                    <p id="res-quote" class="quote">鼓勵金句</p>
+                    <button id="retry-btn" class="secondary-btn">再占卜一次</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

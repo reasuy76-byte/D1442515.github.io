@@ -1,1 +1,81 @@
+/* 全域設定 */
+body {
+    background-color: #1a1a2e; /* 深藍色背景 */
+    color: #ffffff;
+    font-family: "Microsoft JhengHei", sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
+.container {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    background: #16213e;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+h1 { color: #e94560; margin-bottom: 0.5rem; }
+p { color: #898aa6; }
+
+/* 水晶球動畫 */
+.crystal-ball {
+    font-size: 80px;
+    margin: 2rem 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 0 10px #e94560);
+}
+
+.crystal-ball:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* 按鈕樣式 */
+button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background-color: #e94560;
+    color: white;
+    box-shadow: 0 4px 15px rgba(233, 69, 96, 0.4);
+}
+
+.primary-btn:hover { background-color: #ff5e78; }
+
+.secondary-btn {
+    background-color: #0f3460;
+    color: #898aa6;
+    margin-top: 1.5rem;
+}
+
+/* 結果卡片樣式 */
+.hidden { display: none; }
+
+.result-card {
+    background: #0f3460;
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid #e94560;
+    animation: fadeIn 0.5s ease;
+}
+
+#res-title { color: #ffd700; margin-top: 0; }
+.res-content { text-align: left; line-height: 1.6; }
+.quote { font-style: italic; color: #4ecca3; margin-top: 1rem; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
